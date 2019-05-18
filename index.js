@@ -13,6 +13,7 @@ function deleteFromDriverByKey(driver, key){
   var objVal = driver[key];
   var newObj = updateDriverWithKeyAndValue(driver, key, objVal)
   delete newObj[key];
+  return newObj;
 }
 
 function destructivelyDeleteFromDriverByKey(driver, key){
